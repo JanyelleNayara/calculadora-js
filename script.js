@@ -14,7 +14,7 @@ function back() {
 
 function calcular() {
   let result = document.getElementById('result').innerHTML
-  if (result.length < 20) {
+  if (result.length < 20 && result.length > 0) {
     document.getElementById('result').innerHTML = eval(result)
   } else {
     document.getElementById('result').innerHTML = 'Inválido'
